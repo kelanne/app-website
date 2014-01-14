@@ -75,14 +75,15 @@ header {
 }
 
 .info {
-	margin: 0 0.5em 2em 0.5em;
+	margin: 0 0.5em 0em 0.5em;
+	margin-bottom: 65%;
 	background-color: #333333;
 }
 
 @media only screen and (min-width: 39em) {
 	.info {
 		margin-top: 2em;
-		margin-bottom: 30%;
+		margin-bottom: 40%;
 	}
 }
 
@@ -90,7 +91,7 @@ header {
 	.info {
 		margin-top: 4em;
 		margin-right: 2em;
-		margin-bottom: 25%;
+		margin-bottom: 40%;
 	}
 }
 
@@ -98,7 +99,7 @@ header {
 	.info {
 		margin-top: 6em;
 		margin-right: 6em;
-		margin-bottom: 25%;
+		margin-bottom: 30%;
 	}
 }
 
