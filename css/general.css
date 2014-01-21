@@ -103,13 +103,38 @@ header {
 	}
 }
 
-/*	-- 	-- 	-- 	-- 	-- 	-- article two -- 	-- 	-- 	-- 	-- 	-- */
+/*	-- 	-- 	-- 	-- 	-- 	-- carousel -- 	-- 	-- 	-- 	-- 	-- */
 
-.sec-2 {
-	top: 50em;
-	height: 15em;
-	background-color: #666666;
+.carousel {
+	position: relative;
+	padding-bottom: 52.6%;
 }
+
+.carousel img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+@media only screen and (min-width: 39em) {
+	.carousel img
+}
+
+.carousel-buttons {
+	position: absolute;
+	z-index: 1000;
+}
+
+.carousel [data-state="current"] {
+	z-index: 100;
+}
+
+.carousel [data-state="incoming"] {
+	z-index: 101;
+}
+
+
 
 /*	-- 	-- 	-- 	-- 	-- 	-- buttons -- 	-- 	-- 	-- 	-- 	-- */
 
