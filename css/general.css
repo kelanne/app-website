@@ -76,7 +76,7 @@ header {
 
 .info {
 	margin: 0 0.5em 0em 0.5em;
-	margin-bottom: 35%;
+	margin-bottom: 20%;
 	background-color: #333333;
 }
 
@@ -101,11 +101,50 @@ header {
 	}
 }
 
+/*	-- 	-- 	-- 	-- 	-- 	-- animation -- -- 	-- 	-- 	-- 	-- */
+
+.timer-section {
+	background-color: #FFFFFF;
+	height: 12em;
+}
+
+.dial-wrapper {
+	position: relative;
+}
+
+.timer {
+	width: 100px;
+	padding-top: 2.5em;
+	margin: 0 auto;
+	display: block;
+}
+
+.dial {
+	position: absolute;
+	margin-left: -20px;
+	left: 50%;
+	top: 30px;
+	width: 40px;
+	-webkit-transform: rotate(-45deg);
+	-webkit-transform-origin: 50% 30px;
+	-webkit-animation: rocket-rotate 3s linear infinite;
+
+}
+
+@-webkit-keyframes rocket-rotate {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
 /*	-- 	-- 	-- 	-- 	-- 	-- carousel -- 	-- 	-- 	-- 	-- 	-- */
 
 .carousel {
 	position: relative;
-	padding-bottom: 52.6%;
+	padding-bottom: 50%;
 }
 
 .carousel img {
@@ -134,7 +173,54 @@ header {
 	z-index: 101;
 }
 
+/*	-- 	-- 	-- 	-- 	-- 	-- video -- 	-- 	-- 	-- 	-- 	-- */
 
+.video {
+	background-color: #000000;
+}
+
+dialog {
+	border-radius: 6px;
+	border: 1px solid #333;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+	padding: 1em;
+}
+
+dialog::backdrop {
+	background-color: rgba(0,255,0,0.5);
+}
+
+dialog + .backdrop {
+	background-color: rgba(0,255,0,0.5);
+}
+
+.btn-close {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border-radius: 16px;
+	border: 2px solid #FFF;
+	background-color: #000;
+	color: #FFF;
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+	line-height: 0.6;
+	font-size: 1rem;
+	cursor: pointer;
+	position: absolute;
+	top: -16px;
+	right: -16px;
+}
+
+article a {
+	margin: 1rem 30%;
+	color: #FFFFFF;
+}
+
+.video-section {
+	background-color: #000000;
+	height: 3.5rem;
+	width: 100%;
+}
 
 /*	-- 	-- 	-- 	-- 	-- 	-- buttons -- 	-- 	-- 	-- 	-- 	-- */
 
